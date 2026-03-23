@@ -6,7 +6,6 @@
 
 html, body {
     width: 100%;
-    height: 100%;
 }
 
 body {
@@ -41,7 +40,7 @@ button, input, textarea, select {
 }
 
 h1 {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
     background: linear-gradient(45deg, #7c3aed 0%, #06b6d4 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -62,10 +61,15 @@ h1 {
     height: 100%;
 }
 
+.row {
+    padding: 0 1rem;
+    margin: 2rem auto;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
+    gap: 1rem;
 }
 
 #main-nav-wrapper {
@@ -79,18 +83,52 @@ h1 {
 #main-nav ul li a,
 #main-nav ul li span {
     display: block;
-    padding: 16px;
+    padding: 1rem;
+}
+
+#main-nav ul li {
+    transition: background-color .3s ease;
 }
 
 #main-nav ul li:hover:not(:first-child) {
     background-color: rgba(0, 0, 0, .1);
-    transition: background-color .1s ease-in-out;
 }
 
 #main-content {
-    padding-top: 64px;
+    padding-top: 4rem;
 }
 
 .text-center {
     text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-content {
+    padding: 1rem;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.product-price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #06b6d4;
 }
