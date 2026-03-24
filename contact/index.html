@@ -2,29 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact | Testisivu</title>
+  <title>Contact | Amazing Store</title>
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 <div id="container" class="container">
   <header id="main-nav-wrapper">
+    <div id="logo"><span>The Amazing Store</span></div>
+    <button id="menu-toggle">☰</button>
     <nav id="main-nav">
-      <ul class="grid">
-        <li id="logo"><span>The Amazing Store</span></li>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../products/index.html">Products</a></li>
-        <li><a href="../contact/index.html">Contact</a></li>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/products">Products</a></li>
+        <li class="active"><a href="/contact">Contact</a></li>
       </ul>
     </nav>
   </header>
   <main id="main-content">
     <div>
-      <h1 class="text-center">Amazing Store</h1>
-      <div id="hero">
-        <img src="https://picsum.photos/1200/400" alt="Placeholder hero">
+      <h1 class="text-center">Contact Us</h1>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>Contact Information</h2>
+          <p><strong>Address:</strong> Karaportti 2, 02610 Espoo</p>
+          <p><strong>Phone:</strong> 09 74245000</p>
+          <p><strong>Email:</strong> <a href="mailto:contact@amazingstore.fi">contact@amazingstore.fi</a></p>
+          <p><strong>Hours:</strong> Mon-Fri 9:00-18:00</p>
+        </div>
+        <div class="contact-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1981.385635801887!2d24.755938977171514!3d60.223995875059906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468df797cfe43cbb%3A0xb99a2c26d4df39ff!2sMetropolia%20University%20of%20Applied%20Sciences%20-%20Karamalmi%20Campus!5e0!3m2!1sen!2sfi!4v1774372731267!5m2!1sen!2sfi" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
     </div>
   </main>
 </div>
+<footer>
+  <p>&copy; 2026 Kalle Melender</p>
+</footer>
+<script src="../index.js"></script>
 </body>
 </html>

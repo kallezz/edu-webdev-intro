@@ -2,18 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Products | Testisivu</title>
+    <title>Products | Amazing Store</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 <div id="container" class="container">
     <header id="main-nav-wrapper">
+        <div id="logo"><span>The Amazing Store</span></div>
+        <button id="menu-toggle">☰</button>
         <nav id="main-nav">
-            <ul class="grid">
-                <li id="logo"><span>The Amazing Store</span></li>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../products/index.html">Products</a></li>
-                <li><a href="../contact/index.html">Contact</a></li>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li class="active"><a href="/products">Products</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -58,5 +59,9 @@
         </div>
     </main>
 </div>
+<footer>
+    <p>&copy; 2026 Kalle Melender</p>
+</footer>
+<script src="../index.js"></script>
 </body>
 </html>
